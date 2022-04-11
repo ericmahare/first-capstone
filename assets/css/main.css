@@ -1,0 +1,221 @@
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+                
+/* variables */
+:root {
+  --main-Color:#ec5232;
+  --grey-color: rgb(211, 211, 211);
+  --main-black: #272a31;
+  --main-white: #fff;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+/* header section */
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(180.45deg, rgba(255, 255, 255, 0.9) 0.75%, rgba(255, 255, 255, 0.9) 61.94%), url(../images/bodyBcg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;;                          
+}
+
+.header-main-container {
+  padding-top: 30px;
+  width: 85vw;
+  margin: 0 auto;
+  font-size: 14px;
+  position:relative;
+  height: 100%;
+}
+
+.fa-bars {
+  font-size: 40px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 3.25rem;
+  line-height: 1.2;
+  margin-top: 5rem;
+  font-family: 'COCOGOOSE', sans-serif;             
+  background-image: url(../images/textBg.jpg); 
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #fff;
+  padding: 1rem;
+  z-index: 12;
+}
+
+.heading-two {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.circle {
+ display: block;
+ position: absolute;
+ top: 20rem;
+ right: 1px;
+ display: block;
+}
+
+.circle-2 {
+  position: absolute;
+  left: 13rem;
+  width: 6rem;
+}
+
+.circle-3 {
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  width: 6rem;
+}
+
+.circle-4 {
+  position: absolute;
+  bottom: 2rem;
+  width: 7rem;
+}
+
+/* end of header section */
+/* program section */
+#program {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  min-height: 300px;
+  color: var(--main-white);
+  padding: 2rem 0;
+}
+
+.program-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.program-container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.underline {
+  height: 1px;
+  width: 3.5rem;
+  margin: 0 auto;
+  background-color:var(--main-Color);
+}
+
+.program-item {
+  background-color: rgb(74, 74, 74);
+  margin-top: 2rem;
+  padding: 8px;
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.program-item-text {
+  line-height: 1.4;
+}
+
+.program-img {
+  width: 4rem;
+  display: block;
+  margin-bottom: 3px;
+  float: left;
+}
+
+.program-btn {
+  width: 80%;
+  display: block;
+  color: var(--main-white);
+  background-color: var(--main-Color);
+  margin: 4rem auto 0 auto;
+  padding: 30px;
+  border: none;
+  font-size: 1.4rem;
+}
+/* end of program section */
+/* Dog section */
+.available-dogs {
+  width: 85vw;
+  margin: 70px auto;
+}
+
+.dog-container {
+  display: flex;
+  column-gap: 20px;
+  margin: 5rem 0;
+}
+
+.dog-img {
+  display: block;
+  width: 50%;
+  position:relative;
+  float: left;
+}
+
+.dog-img::after {
+  content:"";
+  background-image: url(../images/chess-plane.jpg);
+  position: absolute;
+  background-size: 60%;
+  height: 80px;
+  width: 80px;
+  display: block;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.dog-img img {
+  width: 100%;
+}
+
+.dog-content p {
+  color: var(--main-Color);
+}
+
+.dog-content h4 {
+  font-size: 1.3rem;
+}
+
+.underline-two {
+  height: 1px;
+  width: 2rem;
+  background-color:#000;
+}
+
+.more {
+  width: 97%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3rem;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.fa-circle-chevron-down {
+  color: var(--main-Color);
+  font-size: 1.3rem;
+}
+/* end of dog section */
