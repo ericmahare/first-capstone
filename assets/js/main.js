@@ -1,8 +1,6 @@
 /* eslint-disable linebreak-style */
 // get dom elements
 const mobNav = document.querySelector('.mobile-menu');
-const closeBtn = document.querySelector('.fa-xmark');
-const navBtn = document.querySelector('.fa-bars');
 const mobList = document.querySelectorAll('.mob-list');
 const dogsContainer = document.querySelector('.dogs-main-section');
 const dataToggle = document.querySelector('.more');
@@ -112,18 +110,22 @@ dataToggle.addEventListener('click', () => {
   }
 });
 // show navigation
-navBtn.addEventListener('click', () => {
-  mobNav.style.cssText = `
-  top:0;
-  right:0;
-  `;
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('fa-bars')) {
+    mobNav.style.cssText = `
+      top:0;
+      right:0;
+    `;
+  }
 });
 // hide navigation
-closeBtn.addEventListener('click', () => {
-  mobNav.style.cssText = `
-    top: -9999px;
-    left:-9999px;
-  `;
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('fa-xmark')) {
+    mobNav.style.cssText = `
+      top: -9999px;
+      left:-9999px;
+    `;
+  }
 });
 
 // get all links
