@@ -10,6 +10,10 @@
 - CSS
 - Javascript
 - Linter
+
+## Watch video
+watch the website walk through [video](https://www.loom.com/share/7008e47f60c24e1c9fa06d6b5bf50663)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -19,10 +23,6 @@ To get a local copy up and running follow these simple example steps.
 - open the command prompt in this directory.
 - write `git clone https://github.com/ericmahare/first-capstone.git`.
 - go to the repository folder in your command prompt `cd first-capstone`
-
-## Live Demo
-
-[View website](https://ericmahare.github.io/first-capstone/)
 
 ## Authors
 
@@ -42,6 +42,10 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgements
+
+Thanks to[Cindy Shin](https://www.behance.net/adagio07) for original design.
 
 ## 📝 License
 
