@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dog Shelter</title>
+  <title>Dogvet</title>
   <!-- css link -->
   <link rel="stylesheet" href="./assets/css/main.css">
   <!-- font awesome link -->
@@ -13,6 +13,50 @@
 <body>
   <!-- header section -->
   <header class="header">
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+      <div class="menu-bars">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul>
+        <li class="mob-list"><a href="./assets/pages/about.html">About</a></li>
+        <li class="mob-list"><a href="#" class="mob-link">Program</a></li>
+        <li class="mob-list"><a href="#" class="mob-link">Join</a></li>
+        <li class="mob-list"><a href="#" class="mob-link">Sponsor</a></li>
+        <li class="mob-list"><a href="#" class="mob-link">News</a></li>
+      </ul>
+    </div>
+    <!-- end of mobile menu -->
+    <!-- desktop design -->
+    <div class="top-nav">
+      <div class="top-nav-content">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#">Swahili</a></li>
+        <li><a href="#">My page</a></li>
+        <li><a href="#">Logout</a></li>
+      </div>
+    </div>
+        <!-- main nav -->
+          <nav class="navbar">
+            <div class="top-nav-content nav-content">
+              <div class="nav-logo">
+                <img src="./assets/images/dogLogo.png" alt="logo" class="nav-logo">
+              </div>
+              <div class="nav-link-container">
+                <ul class="nav-list">
+                  <li class="list-item"><a href="./assets/pages/about.html" class="active">About</a></li>
+                  <li class="list-item"><a href="#">Program</a></li>
+                  <li class="list-item"><a href="#">Join</a></li>
+                  <li class="list-item"><a href="#">Sponsor</a></li>
+                  <li class="list-item"><a href="#">News</a></li>
+                  <li class="list-item-btn"><a href="#" class="link">Get a dog</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- end of main nav -->
+    <!-- end of desktop design -->
     <div class="header-main-container">
       <img src="./assets/images/header-icon.PNG" alt="" class="circle">
       <img src="./assets/images/chess-plane.png" alt="" class="circle-2">
@@ -21,9 +65,10 @@
       <div class="bars">
         <i class="fa-solid fa-bars"></i>
       </div>
+
       <div class="header-content">
-        <h1 class="heading">HELP SHELTER HOMELESS DOGS</h1>
-        <p class="header-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit repellat obcaecati tempora quaerat corporis velit id quis quidem dolores atque ipsa dicta, tenetur</p>
+        <h1 class="heading">REMOVE STRAY DOGS FROM OUR STREETS BY GIVING THEM SHELTER</h1> 
+        <p class="header-text" >LDog Vet is a multi award winning charity delivering free essential vetinary care and assistance to dogs experiencing homelessness around Kenya. Homelessness is a growing problem in the Kenya and an increasing number of homeless people have dogs.r</p>
         <h2 class="heading-two">SHELTER THE DOGS</h2>
       </div>
     </div>
@@ -32,14 +77,14 @@
   <!-- main section -->
   <main>
     <section id="program">
-      <h3 class="program-heading">Main Program</h3>
+      <h3 class="program-heading">Our Services</h3>
       <div class="underline"></div>
       <div class="program-container">
         <!-- program one -->
         <div class="program-item">
           <div>
             <img src="./assets/images/bone.png" alt="" class="program-img">
-            <p>Feeding</p>
+            <p class="para">Dog Feeding</p>
           </div>
           <div class="program-item-text">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cumque reiciendis tenetur quasi quidem maxime, in cupiditate ut vitae doloribus.</p>
@@ -50,7 +95,7 @@
         <div class="program-item">
           <div>
             <img src="./assets/images/dog-walking.png" alt="" class="program-img">
-            <p>Feeding</p>
+            <p class="para">Owner Education</p>
           </div>
           <div class="program-item-text">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cumque reiciendis tenetur quasi quidem maxime, in cupiditate ut vitae doloribus.</p>
@@ -61,7 +106,7 @@
         <div class="program-item">
           <div>
             <img src="./assets/images/hospital.png" alt="" class="program-img">
-            <p>Feeding</p>
+            <p class="para">Medication</p>
           </div>
           <div class="program-item-text">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cumque reiciendis tenetur quasi quidem maxime, in cupiditate ut vitae doloribus.</p>
@@ -72,7 +117,7 @@
         <div class="program-item">
           <div>
             <img src="./assets/images/kennel.png" alt="" class="program-img">
-            <p>Feeding</p>
+            <p class="para">Dog Shelter</p>
           </div>
           <div class="program-item-text">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cumque reiciendis tenetur quasi quidem maxime, in cupiditate ut vitae doloribus.</p>
@@ -81,39 +126,41 @@
         <!-- end of program four -->
         <button class="program-btn" type="btn">Fund us</button>
       </div>
+      <p class="more-para">SEE THE WHOLE PROGRAM</p>
     </section>
     <!-- dog section -->
     <section class="available-dogs">
       <h3 class="program-heading">Available Dogs</h3>
       <div class="underline"></div>
-      <!-- dog container one -->
-      <div class="dog-container">
-        <div class="dog-img">
-          <img src="./assets/images/dog-one.jpg" alt="">
-        </div>
-        <div class="dog-content">
-          <h4>Lorem, ipsum dolor.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="underline-two"></div>
-        </div>
-      </div>
-      <!-- end of dog container -->
-      <!-- dog container two -->
-      <div class="dog-container">
-        <div class="dog-img">
-          <img src="./assets/images/dog-six.jpg" alt="">
-        </div>
-        <div class="dog-content">
-          <h4>Lorem, ipsum dolor.</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="underline-two"></div>
-        </div>
-      </div>
-      <!-- end of dog container two -->
-      <div class="more">MORE <i class="fa-solid fa-circle-chevron-down"></i></div>
+
+      <div class="dogs-main-section">
+  
+    </div>
+      <div class="more add">MORE <i class="fa-solid fa-circle-chevron-down"></i></div>
     </section>
     <!-- end of dog section -->
   </main>
   <!-- end of main section -->
+  <footer id="footer">
+    <div class="footer-container-one">
+      <h4 class="footer-header">Our Partners</h4>
+      <div class="underline"></div>
+      <div class="footer-inner-container">
+        <img src="./assets/images/client-one.png" alt="" class="footer-img">
+        <img src="./assets/images/client-six.png" alt="" class="footer-img">
+        <img src="./assets/images/client-three.png" alt="" class="footer-img">
+        <img src="./assets/images/client-five.png" alt="" class="footer-img">
+      </div>
+    <div>
+    </div>
+    </div>
+    <div class="footer-container-two">
+      <div>
+        <img src="./assets/images/dogLogo.png" alt="logo" class="footer-logo">
+      </div>
+      <p>2022 Dogvet. Some Rights Reserved </p>
+      <div>
+  <footer>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
