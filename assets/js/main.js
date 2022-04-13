@@ -1,13 +1,13 @@
+/* eslint-disable linebreak-style */
 // get dom elements
-const mobNav = document.querySelector('.mobile-menu')
-const closeBtn = document.querySelector('.fa-xmark')
-const navBtn = document.querySelector('.fa-bars')
-const mobLink = document.querySelectorAll('.mob-link')
-const mobList = document.querySelectorAll('.mob-list')
-const dogsContainer = document.querySelector('.dogs-main-section')
+const mobNav = document.querySelector('.mobile-menu');
+const closeBtn = document.querySelector('.fa-xmark');
+const navBtn = document.querySelector('.fa-bars');
+const mobList = document.querySelectorAll('.mob-list');
+const dogsContainer = document.querySelector('.dogs-main-section');
 const dataToggle = document.querySelector('.more');
 
-//dogs object
+// dogs object
 const dogs = [
   {
     id: 1,
@@ -45,18 +45,18 @@ const dogs = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     img: './assets/images/dog-two.webp',
   },
-]
+];
 
-//function add more
+// function add more
 const addLess = () => {
-  let dynDogs = []
-    for (let i=0; i < 2; i++) {
-      dynDogs = [...dynDogs, dogs[i]]
-    }
-    let result = ''
-    dynDogs.forEach((dog) => {
-      const { name, description, img } = dog
-      const data = `
+  let dynDogs = [];
+  for (let i = 0; i < 2; i += 1) {
+    dynDogs = [...dynDogs, dogs[i]];
+  }
+  let result = '';
+  dynDogs.forEach((dog) => {
+    const { name, description, img } = dog;
+    const data = `
       <div class="dog-container">
         <div class="dog-img">
           <img src="${img}" alt="">
@@ -66,16 +66,16 @@ const addLess = () => {
           <p>${description}</p>
           <div class="underline-two"></div>
         </div>
-      </div>`
-      result += data
-    })
-    dogsContainer.innerHTML = result
-}
-//function add less
+      </div>`;
+    result += data;
+  });
+  dogsContainer.innerHTML = result;
+};
+// function add less
 const addMore = () => {
-  let result = ''
+  let result = '';
   dogs.forEach((dog) => {
-    const { name, description, img } = dog
+    const { name, description, img } = dog;
     const data = `
     <div class="dog-container">
       <div class="dog-img">
@@ -86,54 +86,54 @@ const addMore = () => {
         <p>${description}</p>
         <div class="underline-two"></div>
       </div>
-    </div>`
-    result += data
-  })
-  dogsContainer.innerHTML = result
-}
-//document event listener
+    </div>`;
+    result += data;
+  });
+  dogsContainer.innerHTML = result;
+};
+// document event listener
 document.addEventListener('DOMContentLoaded', () => {
   if (window.innerWidth < 768) {
-    addLess()
-  }else {
-    addMore()
-  }
-})
-
-dataToggle.addEventListener('click',(e)=>{
-  if(dataToggle.classList.contains('add')){
+    addLess();
+  } else {
     addMore();
-    dataToggle.classList.remove('add')
-    dataToggle.innerHTML = `LESS <i class="fa-solid fa-circle-chevron-up"></i>`
-  }else {
-    addLess()
-    dataToggle.innerHTML = `MORE <i class="fa-solid fa-circle-chevron-down"></i>`
-    dataToggle.classList.add('add')
   }
-})
-//show navigation
+});
+
+dataToggle.addEventListener('click', () => {
+  if (dataToggle.classList.contains('add')) {
+    addMore();
+    dataToggle.classList.remove('add');
+    dataToggle.innerHTML = 'LESS <i class="fa-solid fa-circle-chevron-up"></i>';
+  } else {
+    addLess();
+    dataToggle.innerHTML = 'MORE <i class="fa-solid fa-circle-chevron-down"></i>';
+    dataToggle.classList.add('add');
+  }
+});
+// show navigation
 navBtn.addEventListener('click', () => {
   mobNav.style.cssText = `
   top:0;
   right:0;
-  `
-})
-//hide navigation
+  `;
+});
+// hide navigation
 closeBtn.addEventListener('click', () => {
   mobNav.style.cssText = `
     top: -9999px;
     left:-9999px;
-  `
-})
+  `;
+});
 
-//get all links
+// get all links
 mobList.forEach((list) => {
   list.addEventListener('click', () => {
     mobNav.style.cssText = `
     display:none
-    `
-  })
-})
+    `;
+  });
+});
 
 window.onresize = () => {
   window.location.reload();
