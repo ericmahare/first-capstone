@@ -81,10 +81,6 @@ body {
   font-weight: bold;
 }
 
-.mobile-menu a:hover {
-  color: var(--main-Color);
-}
-
 .header-main-container {
   padding-top: 30px;
   width: 85vw;
@@ -480,6 +476,18 @@ body {
   align-items: center;
 }
 
+.nav-list a {
+  color: var(--main-black);
+}
+
+.mobile-menu a:hover {
+  color: var(--main-Color);
+}
+
+.navbar a:hover {
+  color: var(--main-Color);
+}
+
 .list-item {
   margin: 0 1.5rem;
 }
@@ -490,10 +498,6 @@ body {
 }
 
 .active {
-  color: var(--main-Color);
-}
-
-.navbar a:hover {
   color: var(--main-Color);
 }
 
