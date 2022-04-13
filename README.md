@@ -11,8 +11,11 @@
 - Javascript
 - Linter
 
+## Live Demo
+[view website](https://ericmahare.github.io/first-capstone/)
+
 ## Watch video
-watch the website walk through [video](https://www.loom.com/share/7008e47f60c24e1c9fa06d6b5bf50663)
+Website walk through [video](https://www.loom.com/share/7008e47f60c24e1c9fa06d6b5bf50663)
 
 ## Getting Started
 
